@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Polling Example</title>
+</head>
+<body>
+
+<h1>Character Polling Example</h1>
+
+<div id="character-container">
+    <!-- 여기에 서버에서 받은 글자를 표시할 공간을 만듭니다. -->
+</div>
+
+<script>
+    function fetchCharacter() {
+        // 서버에서 글자를 가져오는 함수
+        fetch('http://127.0.0.1:5000/get_character')
+            .then(response => response.json())
+            .then(data => {
+                // 받은 글자를 화면에 표시
+                document.getElementById('character-container').innerText = data.character;
+            })
+            .catch(error => console.error('Error fetching character:', error));
+    }
+
+    function startCharacterPolling() {
+        // 주기적으로 글자를 폴링하는 함수
+        setInterval(() => {
+            fetch('/poll_characters')
+                .then(response => response.json())
+                .then(data => {
+                    // 새로운 글자가 있을 경우 처리
+                    if (data.character) {
+                        console.log('New character:', data.character);
+                        fetchCharacter();  // 필요에 따라 글자를 다시 가져올 수 있습니다.
+                    }
+                })
+                .catch(error => console.error('Error polling characters:', error));
+        }, 2000);  // 2초마다 폴링을 수행합니다. 원하는 간격으로 조절할 수 있습니다.
+    }
+
+    // 페이지 로딩이 완료되면 초기 글자를 가져오고 폴링을 시작합니다.
+    document.addEventListener('DOMContentLoaded', () => {
+        fetchCharacter();
+        startCharacterPolling();
+    });
+</script>
+
+</body>
+</html>
