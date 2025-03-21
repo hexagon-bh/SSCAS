@@ -6,7 +6,7 @@
 </div>
 
 ## 📹 작동 영상
-[지하철 혼잡도 분석 시스템 작동 영상](https://youtu.be/0AYyNVzy4B8?si=hcutIGUzp9lQbuFH)
+[🎥지하철 혼잡도 분석 시스템 작동 영상](https://youtu.be/0AYyNVzy4B8?si=hcutIGUzp9lQbuFH)
 
 ## 👥 팀 정보
 - **팀명:** 업서요 ❌
@@ -21,7 +21,7 @@
 2023.10 ~ 2023.11
 
 ## 📄 보고서
-[지하철 혼잡도 분석 시스템 제작 보고서](https://drive.google.com/file/d/1CG6QdgF31UuFq7VJwwACHVaHhqqa7FVJ/view?usp=drivesdk)
+[📜지하철 혼잡도 분석 시스템 제작 보고서](https://drive.google.com/file/d/1CG6QdgF31UuFq7VJwwACHVaHhqqa7FVJ/view?usp=drivesdk)
 
 ## 🏆 수상 내역
 LG CNS AI Genius Academy 4등 (EGS 상)
