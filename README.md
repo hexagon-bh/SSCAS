@@ -41,6 +41,18 @@ LG CNS AI Genius Academy 4등 (EGS 상)
 *   **시각화:** Python Matplotlib 라이브러리를 이용한 히트맵 제작
 *   **웹 서비스:** Node.js Express 라이브러리를 이용한 웹 서비스 구축
 
+### 📊 데이터 수집 및 모델 학습
+
+- **데이터 수집:** CCTV 영상 및 이미지 데이터 수집
+- **데이터 전처리:** 이미지 크기 조정 및 노이즈 제거
+- **모델 학습:** Roboflow를 활용한 이미지 분류 모델 학습
+
+### 📈 웹 서비스 구현
+
+- **프론트엔드:** 사용자 인터페이스 구현
+- **백엔드:** Node.js Express를 활용한 API 구축
+- **데이터베이스:** MongoDB를 활용한 데이터 저장 및 관리
+
 ---
 
 ## 🚀 기대 효과
@@ -51,8 +63,22 @@ LG CNS AI Genius Academy 4등 (EGS 상)
 
 ---
 
+## 📝 문제점 및 해결 방안
+
+- **문제점:** 초기 모델의 정확도가 낮았던 문제
+- **해결 방안:** 데이터셋의 다양성을 높이고, 모델의 하이퍼파라미터 조정을 통해 성능 개선
+
+---
+
 ## 📚 참고 자료
 
 - **Roboflow:** [https://roboflow.com/](https://roboflow.com/)
 - **Python Matplotlib:** [https://matplotlib.org/](https://matplotlib.org/)
 - **Node.js Express:** [https://expressjs.com/](https://expressjs.com/)
+
+---
+
+## 📝 느낀점 및 소감
+
+- **프로젝트 진행 중:** 팀원들과의 협업을 통해 많은 것을 배웠습니다.
+- **개선 방향:** 더 다양한 데이터를 수집하고, 모델의 성능을 높이는 방향으로 개선할 계획입니다.
